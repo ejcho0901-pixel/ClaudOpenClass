@@ -9,7 +9,13 @@
       "Bash(python3 \"0202.number.py\")",
       "Bash(pkill -f \"0202.number.py\")",
       "Bash(python3 -m py_compile \"0202.number.py\")",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8001/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8001/)",
+      "Bash(python3 -m py_compile \"04.guestboard.py\")",
+      "Bash(python3 \"04.guestboard.py\")",
+      "Bash(curl -s -X POST http://localhost:8002/entries -d \"name=%EC%B2%A0%EC%88%98&password=1234&message=%EC%A2%8B%EC%9D%80%20%EA%B2%8C%EC%9C%A0%ED%8C%90%EC%9D%B4%EB%84%A4%EC%9A%94!\" -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:8002/ -o /tmp/page.html -w \"%{http_code}\\\\n\")",
+      "Bash(python3 -c \"import json; print\\(json.load\\(open\\('/workspaces/ClaudOpenClass/guestboard.json'\\)\\)[1]['id']\\)\")",
+      "Bash(curl -s -X POST http://localhost:8002/entries/__CMDSUB_OUTPUT__/delete -d password=wrong)"
     ]
   }
 }
