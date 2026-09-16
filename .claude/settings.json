@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:8000/ -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(rm -f cookies.txt)",
+      "Bash(curl -s -c cookies.txt http://localhost:8000/)",
+      "Bash(python3 -c ' *)",
+      "Bash(PYTHONHASHSEED=0 python3 -c ' *)",
+      "Bash(python3 \"0202.number.py\")",
+      "Bash(pkill -f \"0202.number.py\")",
+      "Bash(python3 -m py_compile \"0202.number.py\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8001/)"
+    ]
+  }
+}
