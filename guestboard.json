@@ -22,13 +22,5 @@
     "password_hash": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
     "ip": "121.190.44.133",
     "created_at": "2026-09-16 16:13"
-  },
-  {
-    "id": "229a08d5d34a4d03acbb7cec2ffc8ed8",
-    "name": "test",
-    "message": "timezone_check",
-    "password_hash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
-    "ip": "127.0.0.1",
-    "created_at": "2026-09-16 16:14"
   }
 ]
